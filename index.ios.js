@@ -7,16 +7,25 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  TouchableOpacity,
+  Text,
   View
 } from 'react-native';
 
-import Carousel from 'react-native-snap-carousel';
+import Toast from 'react-native-easy-toast';
 
 export default class NpmLinkDemo extends Component {
 
   render() {
     return (
-      <Carousel />
+      <View>
+        <TouchableOpacity
+           style={{padding: 40}}
+           onPress={() => this.refs.toast.show('Hello, world!')}>
+          <Text>Tap me</Text>
+        </TouchableOpacity>
+        <Toast ref="toast"/>
+      </View>
     );
   }
 }

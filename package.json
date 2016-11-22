@@ -9,7 +9,7 @@
 	"dependencies": {
 		"react": "~15.3.1",
 		"react-native": "0.37.0",
-		"react-native-snap-carousel": "^1.2.1"
+		"react-native-easy-toast": "https://github.com/artdent/react-native-easy-toast"
 	},
 	"devDependencies": {
 		"babel-jest": "17.0.0",
